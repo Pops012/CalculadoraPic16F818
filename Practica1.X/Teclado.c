@@ -1,5 +1,9 @@
 #include <xc.h>
-#include "keyboard.h"
+#include <pic16f818.h>
+#include "Teclado.h"
+
+#define _XTAL_FREQ 4000000
+
 
 #define ROW1 PORTBbits.RB0
 #define ROW2 PORTBbits.RB1
@@ -11,6 +15,7 @@
 #define COL4 PORTBbits.RB7
 
 char lector(){
+    TRISB = 0xF0;
     char tecla = 0;
     ROW1= 1;
     ROW2= 0;

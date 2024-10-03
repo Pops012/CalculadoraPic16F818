@@ -1,0 +1,367 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/debug\Practica1.X.debug.o
+cinit CODE 0 3FE 3FE 2 2 1
+text1 CODE 0 2C1 2C1 83 2 1
+text2 CODE 0 243 243 25 2 1
+text3 CODE 0 268 268 59 2 1
+maintext CODE 0 344 344 BA 2 1
+cstackCOMMON COMMON 1 40 40 13 1 1
+config CONFIG 4 2007 2007 1 2 1
+$C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+end_init CODE 0 0 0 1 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-3F 1
+RAM A0-BF 1
+BANK0 20-3F 1
+BANK1 A0-BF 1
+CONST 1-242 2
+ENTRY 1-242 2
+IDLOC 2000-2003 2
+CODE 1-242 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-13F 1
+SFR3 180-1BF 1
+COMMON 53-7D 1
+EEDATA 2100-217F 2
+STRCODE 1-242 2
+STRING 1-242 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\Practica1.X.debug.o
+3FE cinit CODE >385:C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_1.s
+3FE cinit CODE >388:C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_1.s
+3FE cinit CODE >394:C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_1.s
+3FE cinit CODE >396:C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_1.s
+3FF cinit CODE >397:C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_1.s
+268 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+268 text3 CODE >12:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+269 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+26D text3 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+270 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+272 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+274 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+278 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+27B text3 CODE >18:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+27D text3 CODE >19:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+283 text3 CODE >20:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+285 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+286 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+287 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+28B text3 CODE >22:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+28D text3 CODE >23:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+291 text3 CODE >21:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+295 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+297 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+29B text3 CODE >26:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+29F text3 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2A2 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2A5 text3 CODE >28:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2A6 text3 CODE >28:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2AA text3 CODE >28:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2AC text3 CODE >29:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2B2 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2B7 text3 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2BA text3 CODE >32:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2BC text3 CODE >33:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+2C0 text3 CODE >34:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+243 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+243 text2 CODE >43:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+245 text2 CODE >45:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+249 text2 CODE >46:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+24B text2 CODE >46:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+24F text2 CODE >47:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+250 text2 CODE >47:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+254 text2 CODE >47:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+256 text2 CODE >48:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+257 text2 CODE >48:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+25B text2 CODE >48:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+25D text2 CODE >49:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+263 text2 CODE >52:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+267 text2 CODE >53:C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+2C1 text1 CODE >17:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2C1 text1 CODE >18:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2C2 text1 CODE >19:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2C5 text1 CODE >20:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2C6 text1 CODE >21:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2C7 text1 CODE >22:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2C8 text1 CODE >23:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2CE text1 CODE >24:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2D4 text1 CODE >25:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2DA text1 CODE >26:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2E0 text1 CODE >27:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2E1 text1 CODE >28:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2E2 text1 CODE >29:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2E3 text1 CODE >30:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2E4 text1 CODE >31:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2EA text1 CODE >32:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2F0 text1 CODE >33:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2F6 text1 CODE >34:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2FC text1 CODE >35:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2FD text1 CODE >36:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2FE text1 CODE >37:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+2FF text1 CODE >38:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+300 text1 CODE >39:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+306 text1 CODE >40:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+30C text1 CODE >41:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+312 text1 CODE >42:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+318 text1 CODE >43:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+319 text1 CODE >44:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+31A text1 CODE >45:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+31B text1 CODE >46:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+31C text1 CODE >47:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+322 text1 CODE >48:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+328 text1 CODE >49:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+32E text1 CODE >50:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+334 text1 CODE >51:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+339 text1 CODE >52:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+342 text1 CODE >53:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+342 text1 CODE >54:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+343 text1 CODE >55:C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+344 maintext CODE >31:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+344 maintext CODE >32:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+348 maintext CODE >33:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+349 maintext CODE >35:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+34D maintext CODE >36:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+34E maintext CODE >37:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+34F maintext CODE >40:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+351 maintext CODE >41:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+356 maintext CODE >42:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+358 maintext CODE >42:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+35E maintext CODE >42:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+362 maintext CODE >43:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+366 maintext CODE >43:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+369 maintext CODE >44:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+36C maintext CODE >45:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+375 maintext CODE >46:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+378 maintext CODE >48:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+37D maintext CODE >49:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+38A maintext CODE >49:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+38E maintext CODE >50:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+395 maintext CODE >51:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3A2 maintext CODE >51:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3A7 maintext CODE >53:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3BF maintext CODE >54:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3C1 maintext CODE >55:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3C3 maintext CODE >56:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3CA maintext CODE >57:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3CC maintext CODE >58:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3D2 maintext CODE >59:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3D6 maintext CODE >59:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3DA maintext CODE >60:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3E1 maintext CODE >61:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3EE maintext CODE >64:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+3FC maintext CODE >68:C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - dist/default/debug\Practica1.X.debug.o
+__Hspace_0 400 0 ABS 0 - -
+__Hspace_1 53 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+main@operacion 4C 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+_main 688 0 CODE 0 maintext dist/default/debug\Practica1.X.debug.o
+btemp 7E 0 ABS 0 - dist/default/debug\Practica1.X.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+?___wmul 40 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 45 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+wtemp0 7E 0 ABS 0 - dist/default/debug\Practica1.X.debug.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+___wmul@multiplicand 42 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__end_of___wmul 4D0 0 CODE 0 text2 dist/default/debug\Practica1.X.debug.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of___awmod 582 0 CODE 0 text3 dist/default/debug\Practica1.X.debug.o
+___stackhi 0 0 ABS 0 - C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+lector@tecla 42 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+start_initialization 7FC 0 CODE 0 cinit dist/default/debug\Practica1.X.debug.o
+__end_of_lector 688 0 CODE 0 text1 dist/default/debug\Practica1.X.debug.o
+___int_sp 0 0 STACK 2 stack C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 BANK2 1 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Hcinit 800 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 BANK2 1 bank2 -
+__Lbank3 0 0 BANK3 1 bank3 -
+__Lcinit 7FC 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_PORTAbits 5 0 ABS 0 - dist/default/debug\Practica1.X.debug.o
+_PORTBbits 6 0 ABS 0 - dist/default/debug\Practica1.X.debug.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsivt 0 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsivt 0 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+___wmul 486 0 CODE 0 text2 dist/default/debug\Practica1.X.debug.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 400 0 ABS 0 - -
+__S1 53 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+main@resultado 48 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+_lector 582 0 CODE 0 text1 dist/default/debug\Practica1.X.debug.o
+___awmod@counter 44 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+main@valorTecla 4A 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+___awmod 4D0 0 CODE 0 text3 dist/default/debug\Practica1.X.debug.o
+__pmaintext 688 0 CODE 0 maintext dist/default/debug\Practica1.X.debug.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+___wmul@multiplier 40 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+main@tecla 52 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+main@estado 4D 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+end_of_initialization 7FC 0 CODE 0 cinit dist/default/debug\Practica1.X.debug.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+?___awmod 40 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+___awmod@dividend 42 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__ptext1 582 0 CODE 0 text1 dist/default/debug\Practica1.X.debug.o
+__ptext2 486 0 CODE 0 text2 dist/default/debug\Practica1.X.debug.o
+__ptext3 4D0 0 CODE 0 text3 dist/default/debug\Practica1.X.debug.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___heap_hi 0 0 ABS 0 - C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+__end_of__initialization 7FC 0 CODE 0 cinit dist/default/debug\Practica1.X.debug.o
+___awmod@divisor 40 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+main@valor1 4E 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+main@valor2 50 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__pcstackCOMMON 40 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+__Hend_init 2 0 CODE 0 end_init -
+__end_of_main 7FC 0 CODE 0 maintext dist/default/debug\Practica1.X.debug.o
+_TRISA 85 0 ABS 0 - dist/default/debug\Practica1.X.debug.o
+_TRISB 86 0 ABS 0 - dist/default/debug\Practica1.X.debug.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__initialization 7FC 0 CODE 0 cinit dist/default/debug\Practica1.X.debug.o
+___wmul@product 44 0 COMMON 1 cstackCOMMON dist/default/debug\Practica1.X.debug.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\ivan_\AppData\Local\Temp\xcAsdu0.\driver_tmp_12.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 3FE 7FC 2 2
+text1 0 2C1 582 83 2
+text2 0 243 486 25 2
+text3 0 268 4D0 59 2
+maintext 0 344 688 BA 2
+cstackCOMMON 1 40 40 13 1
+reset_vec 0 0 0 1 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

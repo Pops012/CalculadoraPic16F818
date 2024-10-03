@@ -1,0 +1,95 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F818 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"31 C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"17 C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+[v _lector lector `(uc  1 e 1 0 ]
+[s S28 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"183 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f818.h
+[u S37 . 1 `S28 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES37  1 e 1 @5 ]
+[s S75 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"245
+[u S84 . 1 `S75 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES84  1 e 1 @6 ]
+"947
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1009
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"31 C:\Users\ivan_\Desktop\Practica1\Practica1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"57
+[v main@resultado resultado `i  1 a 2 8 ]
+"43
+[v main@valorTecla valorTecla `i  1 a 2 10 ]
+"35
+[v main@valor2 valor2 `i  1 a 2 16 ]
+[v main@valor1 valor1 `i  1 a 2 14 ]
+"34
+[v main@tecla tecla `uc  1 a 1 18 ]
+"37
+[v main@estado estado `uc  1 a 1 13 ]
+"36
+[v main@operacion operacion `uc  1 a 1 12 ]
+"72
+} 0
+"17 C:\Users\ivan_\Desktop\Practica1\Practica1.X\Teclado.c
+[v _lector lector `(uc  1 e 1 0 ]
+{
+"18
+[v lector@tecla tecla `uc  1 a 1 2 ]
+"55
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
