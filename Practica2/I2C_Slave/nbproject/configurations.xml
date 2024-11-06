@@ -18,8 +18,8 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>../I2C_slave.c</itemPath>
-      <itemPath>../I2C_slave.h</itemPath>
       <itemPath>../slave_main.c</itemPath>
+      <itemPath>../I2C_slave.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>

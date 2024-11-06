@@ -1,11 +1,11 @@
 // I2C_master.c
 #include "I2C_master.h"
 
-#define _XTAL_FREQ 4000000 // Reemplaza este valor por tu frecuencia de oscilador
-#define I2C_DELAY __delay_us(10) // Ajusta el retardo según sea necesario
+#define _XTAL_FREQ 4000000
+#define I2C_DELAY __delay_us(100)
 
 void I2C_Master_Init(void) {
-    ADCON1 = 0x06;          // Configurar pines como digitales
+    ADCON1 = 0x06;
     I2C_SCL = 0;            // Asegurar que PORT está en 0
     I2C_SDA = 0;
     I2C_SCL_TRIS = 1;       // SCL como entrada (línea en alto por pull-up)
@@ -64,4 +64,24 @@ unsigned char I2C_Master_Write(unsigned char data) {
     I2C_DELAY;
 
     return ack;
+}
+
+unsigned char I2C_Master_Send(unsigned char data) {
+    unsigned char ack;
+
+    I2C_Master_Start();
+    ack = I2C_Master_Write(0x50 << 1); // Dirección esclavo con escritura
+    if (ack != 0) {
+        I2C_Master_Stop();
+        return 1; // Error al escribir la dirección
+    }
+
+    ack = I2C_Master_Write(data); // Enviar dato
+    if (ack != 0) {
+        I2C_Master_Stop();
+        return 2; // Error al escribir el dato
+    }
+
+    I2C_Master_Stop(); // Terminar comunicación I2C
+    return 0; // Éxito
 }

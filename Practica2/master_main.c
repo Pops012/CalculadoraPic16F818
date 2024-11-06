@@ -1,33 +1,27 @@
 #include <xc.h>
 #include "I2C_master.h"
 
-#define _XTAL_FREQ 4000000 // Frecuencia del oscilador
+#define _XTAL_FREQ 4000000
 
 void main(void) {
-    unsigned char data = 0x00;
-    unsigned char ack;
+    unsigned char test_data[] = {0x00, 0xFF, 0xAA, 0x55};
+    unsigned char index = 0;
+    unsigned char status;
+    TRISAbits.TRISA6 = 0; // RA6 as output (LED for data reception)
+
+
     I2C_Master_Init(); // Inicializar I2C Master
 
     while(1) {
-        I2C_Master_Start();                // Iniciar comunicación I2C
-
-        // Enviar dirección del esclavo (escritura)
-        ack = I2C_Master_Write(0x50 << 1); // Dirección 0x50 desplazada 1 bit a la izquierda
-        if (ack != 0) {
-            // Si no hay ACK, manejar el error
-            I2C_Master_Stop();
-            continue; // Intentar de nuevo en el siguiente ciclo
+        status = I2C_Master_Send(test_data[index]);
+        if (status != 0) {
+            // Manejar errores
+            // Por ejemplo, encender LED de error
+            PORTAbits.RA6 = 1; // Asumiendo RA6 como LED de error
+        } else {
+            PORTAbits.RA6 = 0; // Apagar LED de error
         }
-
-        // Enviar byte de datos
-        ack = I2C_Master_Write(data++);
-        if (ack != 0) {
-            // Si no hay ACK, manejar el error
-            I2C_Master_Stop();
-            continue; // Intentar de nuevo en el siguiente ciclo
-        }
-
-        I2C_Master_Stop();                 // Terminar comunicación I2C
-        __delay_ms(1000);                  // Esperar 1 segundo
+        index = (index + 1) % 4; // Ciclar a través de los patrones de prueba
+        __delay_ms(1000);   
     }
 }
