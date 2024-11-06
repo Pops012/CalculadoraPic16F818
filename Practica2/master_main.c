@@ -4,24 +4,16 @@
 #define _XTAL_FREQ 4000000
 
 void main(void) {
-    unsigned char test_data[] = {0x00, 0xFF, 0xAA, 0x55};
-    unsigned char index = 0;
     unsigned char status;
-    TRISAbits.TRISA6 = 0; // RA6 as output (LED for data reception)
 
-
-    I2C_Master_Init(); // Inicializar I2C Master
+    I2C_Master_Init(); //Se debe inicializar siempre
 
     while(1) {
+        //usar I2C_Master_Send cada que se quiera comunicar un dato
         status = I2C_Master_Send(test_data[index]);
         if (status != 0) {
-            // Manejar errores
-            // Por ejemplo, encender LED de error
-            PORTAbits.RA6 = 1; // Asumiendo RA6 como LED de error
-        } else {
-            PORTAbits.RA6 = 0; // Apagar LED de error
-        }
-        index = (index + 1) % 4; // Ciclar a través de los patrones de prueba
-        __delay_ms(1000);   
+            //llevar a cabo acciones en caso de error
+            //1 y 2 son codigos de error
+        }  
     }
 }

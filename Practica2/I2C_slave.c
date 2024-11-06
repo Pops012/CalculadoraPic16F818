@@ -1,7 +1,7 @@
 // I2C_slave.c
 #include "I2C_slave.h"
 
-#define _XTAL_FREQ 4000000 // Reemplaza este valor por tu frecuencia de oscilador
+#define _XTAL_FREQ 4000000 // Frecuencia del oscilador
 
 void I2C_Slave_Init(unsigned char address) {
     SSPADD = address << 1; // Dirección del esclavo
