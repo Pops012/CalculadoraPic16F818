@@ -28,9 +28,8 @@ void main(void) {
 
 //***************************************************************************************************************************************
     unsigned int pulses = 0;       // Pulsos contados en RA4
-    unsigned long frequency = 0;  // Frecuencia calculada (en Hz)
-    unsigned long rpm = 0;        // Revoluciones por minuto (RPM)
-    unsigned int duty_cycle = 512; // Valor inicial del ciclo de trabajo (50% de 1023)
+    unsigned int frequency = 0;  // Frecuencia calculada (en Hz)
+    unsigned int rpm = 0;        // Revoluciones por minuto (RPM)
 //***************************************************************************************************************************************
  
 //***************************************************************************************************************************************    
@@ -52,15 +51,15 @@ void main(void) {
     while (1) {
         // Medir la frecuencia de la señal en RA4
         __delay_ms(100);  // Tiempo de medición ajustado a 100 ms
-        GIE = 0;          // Deshabilitar interrupciones
-        pulses = TMR0;    // Leer el número de pulsos
-        TMR0 = 0;         // Reiniciar Timer0
-        GIE = 1;          // Habilitar interrupciones
+        //GIE = 0;          // Deshabilitar interrupciones
+        //pulses = TMR0;    // Leer el número de pulsos
+        //TMR0 = 0;         // Reiniciar Timer0
+        //GIE = 1;          // Habilitar interrupciones
         // Calcular la frecuencia en Hz
-        frequency = pulses * 10; // Frecuencia en Hz (100 ms -> *10 para escalar)
+        //frequency = pulses * 10; // Frecuencia en Hz (100 ms -> *10 para escalar)
         // Calcular las RPM
-        rpm = frequency * 60; // RPM = Frecuencia * 60 (un pulso por revolución)
-        
+        //rpm = frequency * 60; // RPM = Frecuencia * 60 (un pulso por revolución)
+        //rpm = (CCPR1L*255)/255;
 //***************************************************************************************************************************************
         // Incrementar o decrementar el duty_cycle con botones
         if (PORTAbits.RA0 == 1 && CCPR1L<250) { // Botón incrementar
@@ -74,7 +73,7 @@ void main(void) {
         }
 //***************************************************************************************************************************************
         // Enviar las RPM como un solo valor por I2C
-        I2C_Master_Send((unsigned char)rpm);
+        I2C_Master_Send((unsigned char)CCPR1L);
     }
 }
 
