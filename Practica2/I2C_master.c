@@ -85,3 +85,19 @@ unsigned char I2C_Master_Send(unsigned char data) {
     I2C_Master_Stop(); // Terminar comunicación I2C
     return 0; // Éxito
 }
+
+unsigned char I2C_Master_Send_Int(int data) {
+    unsigned char high_byte = (data >> 8) & 0xFF;
+    unsigned char low_byte = data & 0xFF;
+    unsigned char ack;
+
+    do {
+        ack = I2C_Master_Send(high_byte);
+    } while (ack != 0);
+
+    do {
+        ack = I2C_Master_Send(low_byte);
+    } while (ack != 0);
+
+    return 0;
+}

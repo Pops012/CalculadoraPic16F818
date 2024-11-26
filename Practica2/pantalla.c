@@ -1,5 +1,4 @@
 #include <xc.h>
-#include <PIC16F818.h>
 #include <stdio.h>
 #define _XTAL_FREQ 4000000
 #define D PORTAbits.RA3

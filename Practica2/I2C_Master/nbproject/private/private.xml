@@ -2,12 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/ivan_/Desktop/Practica2Chips/CalculadoraPic16F818/Practica2/pantalla.h</file>
-            <file>file:/C:/Users/ivan_/Desktop/Practica2Chips/CalculadoraPic16F818/Practica2/slave_main.c</file>
-            <file>file:/C:/Users/ivan_/Desktop/Practica2Chips/CalculadoraPic16F818/Practica2/I2C_master.h</file>
-            <file>file:/C:/Users/ivan_/Desktop/Practica2Chips/CalculadoraPic16F818/Practica2/master_main.c</file>
-            <file>file:/C:/Users/ivan_/Desktop/Practica2Chips/CalculadoraPic16F818/Practica2/pantalla.c</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

@@ -5,7 +5,7 @@
  * Created on 26 de septiembre de 2024, 05:45 PM
  */
 
-//  Declaración de las bibliotecas
+//  Declaracion de las bibliotecas
 #include <stdio.h>
 #include <stdlib.h>
 #include <pic16f818.h>

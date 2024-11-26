@@ -3,23 +3,23 @@
 
 #define _XTAL_FREQ 4000000  // Frecuencia del oscilador (4 MHz)
 
-// Configuración de bits de configuración del microcontrolador
-#pragma config FOSC = INTOSCIO   // Oscilador interno, función I/O en RA6 y RA7
+// Configuraciï¿½n de bits de configuraciï¿½n del microcontrolador
+#pragma config FOSC = INTOSCIO   // Oscilador interno, funciï¿½n I/O en RA6 y RA7
 #pragma config WDTE = OFF        // Watchdog Timer deshabilitado
 #pragma config PWRTE = OFF       // Power-up Timer deshabilitado
 #pragma config MCLRE = OFF       // MCLR pin configurado como I/O
 #pragma config BOREN = OFF       // Brown-out Reset deshabilitado
-#pragma config LVP = OFF         // Programación en Bajo Voltaje deshabilitada
-#pragma config CPD = OFF         // Protección de código en EEPROM deshabilitada
-#pragma config WRT = OFF         // Protección de escritura en memoria Flash deshabilitada
+#pragma config LVP = OFF         // Programaciï¿½n en Bajo Voltaje deshabilitada
+#pragma config CPD = OFF         // Protecciï¿½n de cï¿½digo en EEPROM deshabilitada
+#pragma config WRT = OFF         // Protecciï¿½n de escritura en memoria Flash deshabilitada
 #pragma config CCPMX = RB3       // CCP1 asignado al pin RB3
-#pragma config CP = OFF          // Protección de código en memoria Flash deshabilitada
+#pragma config CP = OFF          // Protecciï¿½n de cï¿½digo en memoria Flash deshabilitada
 
-#define PULSOS_POR_REVOLUCION 1  // Un pulso por revolución
+#define PULSOS_POR_REVOLUCION 1  // Un pulso por revoluciï¿½n
 
 
 //***************************************************************************************************************************************
-// Declaración de funciones
+// Declaraciï¿½n de funciones
 void PWM_Init(void);
 void Timer0_Init(void);
 //***************************************************************************************************************************************
@@ -33,51 +33,51 @@ void main(void) {
 //***************************************************************************************************************************************
  
 //***************************************************************************************************************************************    
-    // Configuración de los pines
+    // Configuraciï¿½n de los pines
     ADCON1bits.PCFG=7;
-    TRISAbits.TRISA0 = 1; // RA0 como entrada (Botón incrementar)
-    TRISAbits.TRISA1 = 1; // RA1 como entrada (Botón decrementar)
-    TRISAbits.TRISA4 = 1; // RA4 como entrada (Señal de pulsos cuadrados)
+    TRISAbits.TRISA0 = 1; // RA0 como entrada (Botï¿½n incrementar)
+    TRISAbits.TRISA1 = 1; // RA1 como entrada (Botï¿½n decrementar)
+    TRISAbits.TRISA4 = 1; // RA4 como entrada (Seï¿½al de pulsos cuadrados)
     TRISBbits.TRISB3 = 0; // RB3 como salida (PWM)
 //***************************************************************************************************************************************
 
 //***************************************************************************************************************************************    
-    // Inicialización del PWM, Timer0 e I2C
+    // Inicializaciï¿½n del PWM, Timer0 e I2C
     I2C_Master_Init();
     PWM_Init();
     Timer0_Init();
 //***************************************************************************************************************************************
 
     while (1) {
-        // Medir la frecuencia de la señal en RA4
-        __delay_ms(100);  // Tiempo de medición ajustado a 100 ms
+        // Medir la frecuencia de la seï¿½al en RA4
+        __delay_ms(100);  // Tiempo de mediciï¿½n ajustado a 100 ms
         //GIE = 0;          // Deshabilitar interrupciones
-        //pulses = TMR0;    // Leer el número de pulsos
+        //pulses = TMR0;    // Leer el nï¿½mero de pulsos
         //TMR0 = 0;         // Reiniciar Timer0
         //GIE = 1;          // Habilitar interrupciones
         // Calcular la frecuencia en Hz
         //frequency = pulses * 10; // Frecuencia en Hz (100 ms -> *10 para escalar)
         // Calcular las RPM
-        //rpm = frequency * 60; // RPM = Frecuencia * 60 (un pulso por revolución)
+        //rpm = frequency * 60; // RPM = Frecuencia * 60 (un pulso por revoluciï¿½n)
         //rpm = (CCPR1L*255)/255;
 //***************************************************************************************************************************************
         // Incrementar o decrementar el duty_cycle con botones
-        if (PORTAbits.RA0 == 1 && CCPR1L<250) { // Botón incrementar
+        if (PORTAbits.RA0 == 1 && CCPR1L<250) { // Botï¿½n incrementar
             CCPR1L+=10;
             __delay_ms(50);
         }
-        if (PORTAbits.RA1 == 1 && CCPR1L>0) { // Botón decrementar
+        if (PORTAbits.RA1 == 1 && CCPR1L>0) { // Botï¿½n decrementar
             // Retardo para debounce
             CCPR1L-=10;
             __delay_ms(50);
         }
 //***************************************************************************************************************************************
         // Enviar las RPM como un solo valor por I2C
-        I2C_Master_Send((unsigned char)CCPR1L);
+        I2C_Master_Send_Int(CCPR1L);
     }
 }
 
-// Inicialización del módulo PWM
+// Inicializaciï¿½n del mï¿½dulo PWM
 void PWM_Init(void) {
     T2CON=0b00000110;
     CCP1CON=0b00111111;
@@ -85,7 +85,7 @@ void PWM_Init(void) {
     CCPR1L = 100;
 }
 
-// Inicialización de Timer0 para contar pulsos en RA4
+// Inicializaciï¿½n de Timer0 para contar pulsos en RA4
 void Timer0_Init(void) {
     OPTION_REGbits.T0CS = 1; // Fuente de reloj de Timer0 es RA4/T0CKI
     OPTION_REGbits.T0SE = 0; // Incrementa en flanco de subida
