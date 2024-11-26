@@ -20,6 +20,8 @@
       <itemPath>../I2C_slave.c</itemPath>
       <itemPath>../slave_main.c</itemPath>
       <itemPath>../I2C_slave.h</itemPath>
+      <itemPath>../pantalla.c</itemPath>
+      <itemPath>../pantalla.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -35,7 +37,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.46</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <packs>

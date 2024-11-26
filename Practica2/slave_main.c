@@ -1,12 +1,20 @@
-// slave_main.c
 #include <xc.h>
+#include "pantalla.h"
 #include "I2C_slave.h"
 #define _XTAL_FREQ 4000000
+
+#pragma config FOSC = INTOSCIO
+#pragma config WDTE = OFF
+#pragma config PWRTE = OFF
+#pragma config MCLRE = OFF
+#pragma config BOREN = OFF
+#pragma config LVP = OFF
+#pragma config CPD = OFF
+#pragma config CP = OFF
 
 volatile unsigned char received_data = 0;
 volatile unsigned char data_ready = 0;
 
-// interrupcion para la recepcion de datos por I2C
 void __interrupt() I2C_Slave_Receive(void) {
     if (PIR1bits.SSPIF) {
         if (!SSPSTATbits.R_nW) {
@@ -25,18 +33,19 @@ void __interrupt() I2C_Slave_Receive(void) {
 
 void main(void) {
     ADCON1 = 0x06;
-    //siempre se debe inicializar el esclavo
+    TRISA = 0x00;
+    PORTA = 0x00;
+
     I2C_Slave_Init(0x50);
-    unsigned char data = 0x00;
 
-    while(1) {
+    unsigned char last_data = 0;
+
+    while (1) {
         if (data_ready) {
-            data = received_data;
-            data_ready = 0;
-            // la variable data se actualiza con los datos mas recientes
+            last_data = received_data; // Actualizar último dato recibido
+            data_ready = 0;            // Reiniciar indicador
         }
-        //en esta area se puede trabajar con la variable data
-        //la cual contiene los datos recibidos mas recientemente 
 
+        actualizarPantalla((int)last_data); // Mostrar siempre el último valor
     }
 }
