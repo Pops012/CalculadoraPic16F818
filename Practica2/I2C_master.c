@@ -2,7 +2,7 @@
 #include "I2C_master.h"
 
 #define _XTAL_FREQ 4000000
-#define I2C_DELAY __delay_us(100)
+#define I2C_DELAY __delay_us(200)
 
 void I2C_Master_Init(void) {
     ADCON1 = 0x06;
@@ -89,15 +89,8 @@ unsigned char I2C_Master_Send(unsigned char data) {
 unsigned char I2C_Master_Send_Int(int data) {
     unsigned char high_byte = (data >> 8) & 0xFF;
     unsigned char low_byte = data & 0xFF;
-    unsigned char ack;
 
-    do {
-        ack = I2C_Master_Send(high_byte);
-    } while (ack != 0);
+    I2C_Master_Send(high_byte);
+    I2C_Master_Send(low_byte);
 
-    do {
-        ack = I2C_Master_Send(low_byte);
-    } while (ack != 0);
-
-    return 0;
 }

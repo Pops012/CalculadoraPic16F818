@@ -47,7 +47,7 @@ void main(void) {
     PWM_Init();
     Timer0_Init();
 //***************************************************************************************************************************************
-
+    CCPR1L = 100;
     while (1) {
         // Medir la frecuencia de la se�al en RA4
         __delay_ms(100);  // Tiempo de medici�n ajustado a 100 ms
@@ -73,7 +73,9 @@ void main(void) {
         }
 //***************************************************************************************************************************************
         // Enviar las RPM como un solo valor por I2C
-        I2C_Master_Send_Int(CCPR1L);
+        if(CCPR1L < 255){
+            I2C_Master_Send((unsigned char)CCPR1L);
+        }
     }
 }
 
