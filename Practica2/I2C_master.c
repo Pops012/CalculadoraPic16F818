@@ -86,11 +86,30 @@ unsigned char I2C_Master_Send(unsigned char data) {
     return 0; // Éxito
 }
 
-unsigned char I2C_Master_Send_Int(int data) {
+unsigned char I2C_Master_Send_Int(unsigned int data) {
     unsigned char high_byte = (data >> 8) & 0xFF;
     unsigned char low_byte = data & 0xFF;
+    unsigned char ack;
 
-    I2C_Master_Send(high_byte);
-    I2C_Master_Send(low_byte);
+    I2C_Master_Start();
+    ack = I2C_Master_Write(0x50 << 1); // Slave address with write
+    if (ack != 0) {
+        I2C_Master_Stop();
+        return 1; // Error writing address
+    }
 
+    ack = I2C_Master_Write(high_byte); // Send high byte
+    if (ack != 0) {
+        I2C_Master_Stop();
+        return 2; // Error writing high byte
+    }
+
+    ack = I2C_Master_Write(low_byte); // Send low byte
+    if (ack != 0) {
+        I2C_Master_Stop();
+        return 3; // Error writing low byte
+    }
+
+    I2C_Master_Stop();
+    return 0; // Success
 }

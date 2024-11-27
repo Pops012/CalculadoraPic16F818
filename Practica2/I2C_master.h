@@ -14,6 +14,6 @@ void I2C_Master_Start(void);
 void I2C_Master_Stop(void);
 unsigned char I2C_Master_Write(unsigned char data);
 unsigned char I2C_Master_Send(unsigned char data);
-unsigned char I2C_Master_Send_Int(int data);
+unsigned char I2C_Master_Send_Int(unsigned int data);
 
 #endif

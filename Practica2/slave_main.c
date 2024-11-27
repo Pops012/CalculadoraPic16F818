@@ -19,7 +19,7 @@ void main(void) {
 
     I2C_Slave_Init(0x50);
 
-    int last_data = 0;
+    unsigned int last_data = 0;
 
     while (1) {
         if (data_ready) {

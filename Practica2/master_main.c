@@ -29,13 +29,13 @@ unsigned int rpm = 0;          // Revoluciones por minuto (RPM)
 // Rutina de interrupción
 void __interrupt() ISR(void) {
     if (INTCONbits.RBIF) { // Verificar interrupt-on-change en PORTB
-        if (PORTBbits.RB5 == 1 && CCPR1L < 250) { // Botón incrementar (activo bajo)
+        if (PORTBbits.RB5 == 1 && CCPR1L < 0xFF ) { // Botón incrementar (activo bajo)
             CCPR1L += 10;
-            I2C_Master_Send(CCPR1L);
+            I2C_Master_Send_Int((unsigned int)CCPR1L);
         }
         if (PORTBbits.RB6 == 1 && CCPR1L > 0) { // Botón decrementar (activo bajo)
             CCPR1L -= 10;
-            I2C_Master_Send(CCPR1L);
+            I2C_Master_Send_Int((unsigned int)CCPR1L);
         }
         INTCONbits.RBIF = 0; // Limpiar bandera de interrupción
         __delay_ms(50);    // Debounce de los botones
@@ -63,8 +63,8 @@ void main(void) {
     PWM_Init();
     Timer0_Init();
 
-    CCPR1L = 100;
-    I2C_Master_Send(CCPR1L);
+    CCPR1L = 240;
+    I2C_Master_Send_Int((unsigned int)CCPR1L);
     while (1) {
     }
 }

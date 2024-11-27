@@ -17,16 +17,22 @@ void I2C_Slave_Init(unsigned char address) {
 
 void __interrupt() I2C_Slave_Receive(void) {
     if (PIR1bits.SSPIF) {
-        if (!SSPSTATbits.R_nW) {
-            if (!SSPSTATbits.D_nA) {
-                volatile unsigned char dummy = SSPBUF;
+        if (!SSPSTATbits.R_nW) { // Write operation
+            if (!SSPSTATbits.D_nA) { // Address byte
+                volatile unsigned char dummy = SSPBUF; // Clear buffer
                 SSPCONbits.CKP = 1;
-            } else {
-                received_int =(int)SSPBUF;
-                data_ready = 1;
+            } else { // Data byte
+                if (receiving_high_byte) {
+                    temp_byte = SSPBUF;
+                    receiving_high_byte = 0;
+                } else {
+                    received_int = ((unsigned int)temp_byte << 8) | SSPBUF;
+                    data_ready = 1;
+                    receiving_high_byte = 1;
+                }
                 SSPCONbits.CKP = 1;
             }
         }
-        PIR1bits.SSPIF = 0;
+        PIR1bits.SSPIF = 0; // Clear interrupt flag
     }
 }
