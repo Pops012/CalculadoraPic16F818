@@ -4,10 +4,10 @@
 
 #include <xc.h>
 
-#define I2C_SCL_TRIS TRISBbits.TRISB4
-#define I2C_SDA_TRIS TRISBbits.TRISB1
-#define I2C_SCL PORTBbits.RB4
-#define I2C_SDA PORTBbits.RB1
+#define I2C_SCL_TRIS TRISAbits.TRISA0
+#define I2C_SDA_TRIS TRISAbits.TRISA1
+#define I2C_SCL PORTAbits.RA0
+#define I2C_SDA PORTAbits.RA1
 
 void I2C_Master_Init(void);
 void I2C_Master_Start(void);

@@ -1,0 +1,6 @@
+{
+    "mplab.mplabx-importer.ignorePatterns": [
+        "Practica2/I2C_Master/nbproject/configurations.xml",
+        "Practica1.X/nbproject/configurations.xml"
+    ]
+}
