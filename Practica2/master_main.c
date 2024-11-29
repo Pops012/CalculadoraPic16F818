@@ -106,8 +106,7 @@ void main(void) {
         
 //*********************************************
         // Enviar las RPM como un solo valor por I2C
-        //I2C_Master_Send((unsigned char)dc);
-    }
+        I2C_Master_Send_Int((unsigned int)CCPR1L);    }
 }
 
 // Inicialización del módulo PWM
