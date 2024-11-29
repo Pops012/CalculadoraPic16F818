@@ -2,7 +2,7 @@
 #include "I2C_master.h"
 
 #define _XTAL_FREQ 4000000
-#define I2C_DELAY __delay_us(100)
+#define I2C_DELAY __delay_us(50)
 
 void I2C_Master_Init(void) {
     ADCON1 = 0x06;
