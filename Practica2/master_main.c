@@ -38,9 +38,9 @@ void Timer0_Init(void);
 void main(void) {
 
 //*********************************************
-    unsigned int pulses = 0;       // Pulsos contados en RA4
-    unsigned int frequency = 0;  // Frecuencia calculada (en Hz)
-    unsigned int rpm = 0;        // Revoluciones por minuto (RPM)
+    //unsigned int pulses = 0;       // Pulsos contados en RA4
+    //unsigned int frequency = 0;  // Frecuencia calculada (en Hz)
+    //unsigned int rpm = 0;        // Revoluciones por minuto (RPM)
     unsigned int dc = 500;
 //*********************************************
  
@@ -51,7 +51,7 @@ void main(void) {
     TRISAbits.TRISA1 = 1; // RA1 como entrada (Botón decrementar)
     TRISAbits.TRISA4 = 1; // RA4 como entrada (Señal de pulsos cuadrados)
     TRISBbits.TRISB3 = 0; // RB3 como salida (PWM)
-    TRISBbits.TRISB0=0;
+    //TRISBbits.TRISB0=0;
 //*********************************************
 
 //*********************************************    
@@ -89,8 +89,9 @@ void main(void) {
             CCP1CONbits.CCP1Y=dc & (1<<1);
             CCPR1L=dc>>2;
             __delay_ms(50);
-            while(PORTAbits.RA0==1)PORTBbits.RB0=1;
-            PORTBbits.RB0=0;
+            //I2C_Master_Send_Int((unsigned int)dc);    }
+            //while(PORTAbits.RA0==1)PORTBbits.RB0=1;
+            //PORTBbits.RB0=0;
         }
         if (PORTAbits.RA1 == 1 && dc>0) { // Botón decrementar
             // Retardo para debounce
@@ -99,14 +100,17 @@ void main(void) {
             CCP1CONbits.CCP1Y=dc & (1<<1);
             CCPR1L=dc>>2;
             __delay_ms(50);
-            while(PORTAbits.RA0==1) PORTBbits.RB0=1;
-            PORTBbits.RB0=0;
+                
+
+            //while(PORTAbits.RA0==1) PORTBbits.RB0=1;
+            //PORTBbits.RB0=0;
             
         }
-        
+        //I2C_Master_Send_Int((unsigned int)dc);
+
+    }
 //*********************************************
         // Enviar las RPM como un solo valor por I2C
-        I2C_Master_Send_Int((unsigned int)CCPR1L);    }
 }
 
 // Inicialización del módulo PWM
