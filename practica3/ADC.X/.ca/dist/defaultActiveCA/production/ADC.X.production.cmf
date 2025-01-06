@@ -11,41 +11,40 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcXImKmKO/driver_tmp_12.o
-end_init CODE 0 0 0 2 2 1
-$.ca/dist/defaultActiveCA/production/ADC.X.production.o
+$C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+end_init CODE 0 0 0 1 2 1
+config CONFIG 4 2007 2007 1 2 1
+$.ca/dist/defaultActiveCA/production\ADC.X.production.o
 cinit CODE 0 3FE 3FE 2 2 1
-text1 CODE 0 13 13 E 2 1
-text2 CODE 0 A A 9 2 1
-text3 CODE 0 2FE 2FE B0 2 1
-text4 CODE 0 28A 28A 74 2 1
-text5 CODE 0 FC FC 302 2 1
-text6 CODE 0 21 21 27 2 1
-text7 CODE 0 233 233 57 2 1
-text8 CODE 0 1D0 1D0 63 2 1
-text9 CODE 0 48 48 B4 2 1
-text10 CODE 0 0 0 1D0 2 1
-maintext CODE 0 3AE 3AE 5A 2 1
-cstackCOMMON COMMON 1 40 40 3B 1 1
-cstackBANK0 BANK0 1 20 20 13 1 1
+text1 CODE 0 2FE 2FE 100 2 1
+text2 CODE 0 23A 23A 38 2 1
+text3 CODE 0 272 272 42 2 1
+text4 CODE 0 215 215 25 2 1
+maintext CODE 0 2B4 2B4 4A 2 1
+cstackCOMMON COMMON 1 40 40 27 1 1
+config CONFIG 4 2007 2007 1 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 33-3F 1
+RAM 20-3F 1
 RAM A0-BF 1
-BANK0 33-3F 1
+BANK0 20-3F 1
 BANK1 A0-BF 1
+CONST 1-214 2
+ENTRY 1-214 2
 IDLOC 2000-2003 2
+CODE 1-214 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-13F 1
 SFR3 180-1BF 1
-COMMON 7B-7D 1
-CONFIG 2007-2007 2
+COMMON 67-7D 1
 EEDATA 2100-217F 2
+STRCODE 1-214 2
+STRING 1-214 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -59,518 +58,109 @@ EEDATA 2100-217F 2
 # are in ascending order of addresses.
 # All other numeric values are in decimal.
 %LINETAB
-$.ca/dist/defaultActiveCA/production/ADC.X.production.o
-3FE cinit CODE >393:/tmp/xcXImKmKO/driver_tmp_1.s
-3FE cinit CODE >396:/tmp/xcXImKmKO/driver_tmp_1.s
-3FE cinit CODE >402:/tmp/xcXImKmKO/driver_tmp_1.s
-3FE cinit CODE >404:/tmp/xcXImKmKO/driver_tmp_1.s
-3FF cinit CODE >405:/tmp/xcXImKmKO/driver_tmp_1.s
-0 text10 CODE >8:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-0 text10 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-6 text10 CODE >27:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-A text10 CODE >28:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-E text10 CODE >29:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-F text10 CODE >33:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-14 text10 CODE >35:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-19 text10 CODE >37:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-21 text10 CODE >40:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-22 text10 CODE >42:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-23 text10 CODE >43:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-24 text10 CODE >46:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-2C text10 CODE >49:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-2F text10 CODE >50:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-33 text10 CODE >51:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-37 text10 CODE >52:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-38 text10 CODE >56:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-3D text10 CODE >58:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-42 text10 CODE >60:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-4A text10 CODE >63:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-4B text10 CODE >65:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-4C text10 CODE >66:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-4D text10 CODE >69:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-55 text10 CODE >70:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-55 text10 CODE >75:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-59 text10 CODE >75:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-5D text10 CODE >76:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-65 text10 CODE >77:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-69 text10 CODE >78:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-6B text10 CODE >79:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-74 text10 CODE >83:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-79 text10 CODE >84:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-79 text10 CODE >85:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-82 text10 CODE >89:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-8A text10 CODE >89:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-90 text10 CODE >89:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-94 text10 CODE >92:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-9C text10 CODE >93:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-A4 text10 CODE >94:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-AC text10 CODE >96:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-AD text10 CODE >97:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-AE text10 CODE >100:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-B3 text10 CODE >101:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-B5 text10 CODE >101:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-BC text10 CODE >102:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-BE text10 CODE >102:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-C5 text10 CODE >103:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-C9 text10 CODE >104:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-CA text10 CODE >106:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-CC text10 CODE >106:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-D3 text10 CODE >112:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-D5 text10 CODE >112:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-D9 text10 CODE >112:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-DD text10 CODE >112:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-E1 text10 CODE >112:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-E5 text10 CODE >115:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-E6 text10 CODE >116:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-E9 text10 CODE >116:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-EF text10 CODE >116:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-F5 text10 CODE >116:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-FA text10 CODE >118:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-FC text10 CODE >97:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-FE text10 CODE >97:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-102 text10 CODE >122:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-106 text10 CODE >122:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-10A text10 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-10C text10 CODE >128:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-10E text10 CODE >128:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-115 text10 CODE >129:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-119 text10 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-11A text10 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-11C text10 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-123 text10 CODE >133:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-125 text10 CODE >133:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-129 text10 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-12D text10 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-12E text10 CODE >140:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-132 text10 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-142 text10 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-146 text10 CODE >142:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-148 text10 CODE >143:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-149 text10 CODE >144:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-149 text10 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-14E text10 CODE >150:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-153 text10 CODE >151:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-156 text10 CODE >151:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-15A text10 CODE >151:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-15E text10 CODE >151:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-161 text10 CODE >152:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-165 text10 CODE >153:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-17E text10 CODE >154:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-180 text10 CODE >154:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-184 text10 CODE >159:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-189 text10 CODE >159:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-18D text10 CODE >159:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-191 text10 CODE >160:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-197 text10 CODE >161:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-19F text10 CODE >165:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1A6 text10 CODE >165:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1AA text10 CODE >165:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1AE text10 CODE >166:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1B2 text10 CODE >167:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1BA text10 CODE >169:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1BB text10 CODE >170:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1BB text10 CODE >173:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1BF text10 CODE >175:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1C3 text10 CODE >176:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1C4 text10 CODE >177:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1C5 text10 CODE >180:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1C7 text10 CODE >181:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1C7 text10 CODE >182:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1C9 text10 CODE >182:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1CC text10 CODE >183:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-1CF text10 CODE >185:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcdiv.c
-48 text9 CODE >10:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-49 text9 CODE >15:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-52 text9 CODE >16:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-5B text9 CODE >16:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-5D text9 CODE >16:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-5F text9 CODE >16:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-61 text9 CODE >17:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-62 text9 CODE >19:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-6A text9 CODE >20:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-6A text9 CODE >21:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-6E text9 CODE >21:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-72 text9 CODE >22:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-7B text9 CODE >23:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-7D text9 CODE >24:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-7E text9 CODE >25:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-80 text9 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-81 text9 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-87 text9 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-89 text9 CODE >24:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-90 text9 CODE >29:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-92 text9 CODE >30:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-95 text9 CODE >30:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-99 text9 CODE >30:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-9D text9 CODE >30:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-A0 text9 CODE >31:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-A1 text9 CODE >31:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-A7 text9 CODE >31:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-A9 text9 CODE >28:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-A9 text9 CODE >32:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-B0 text9 CODE >34:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-B2 text9 CODE >35:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-B4 text9 CODE >35:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-BB text9 CODE >33:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-C1 text9 CODE >33:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-C5 text9 CODE >37:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-C9 text9 CODE >38:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-D1 text9 CODE >39:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-D3 text9 CODE >40:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-D9 text9 CODE >40:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-DF text9 CODE >40:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-E9 text9 CODE >41:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-F2 text9 CODE >42:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-F3 text9 CODE >43:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-FB text9 CODE >44:/opt/microchip/xc8/v2.50/pic/sources/c99/common/xxtofl.c
-1D0 text8 CODE >5:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1D0 text8 CODE >13:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1D1 text8 CODE >14:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1D5 text8 CODE >15:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1D8 text8 CODE >15:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1DA text8 CODE >16:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1DC text8 CODE >18:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1E0 text8 CODE >19:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1E3 text8 CODE >19:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1E5 text8 CODE >20:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1E7 text8 CODE >22:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1E9 text8 CODE >23:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1EF text8 CODE >24:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1F1 text8 CODE >25:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1F2 text8 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1F3 text8 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1F7 text8 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1F9 text8 CODE >27:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1FB text8 CODE >25:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-1FF text8 CODE >30:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-200 text8 CODE >30:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-204 text8 CODE >30:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-206 text8 CODE >31:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-208 text8 CODE >31:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-20C text8 CODE >31:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-210 text8 CODE >32:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-213 text8 CODE >32:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-216 text8 CODE >33:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-217 text8 CODE >35:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-218 text8 CODE >35:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-21C text8 CODE >35:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-21E text8 CODE >36:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-224 text8 CODE >38:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-229 text8 CODE >39:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-22C text8 CODE >39:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-22E text8 CODE >40:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-232 text8 CODE >41:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awdiv.c
-233 text7 CODE >5:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-233 text7 CODE >12:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-234 text7 CODE >13:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-238 text7 CODE >14:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-23B text7 CODE >14:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-23D text7 CODE >15:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-23F text7 CODE >17:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-243 text7 CODE >18:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-246 text7 CODE >18:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-248 text7 CODE >19:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-24E text7 CODE >20:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-250 text7 CODE >21:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-251 text7 CODE >22:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-252 text7 CODE >22:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-256 text7 CODE >22:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-258 text7 CODE >23:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-25A text7 CODE >21:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-25E text7 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-260 text7 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-264 text7 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-268 text7 CODE >27:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-26B text7 CODE >27:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-26E text7 CODE >28:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-26F text7 CODE >28:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-273 text7 CODE >28:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-275 text7 CODE >29:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-27B text7 CODE >31:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-280 text7 CODE >32:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-283 text7 CODE >32:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-285 text7 CODE >33:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-289 text7 CODE >34:/opt/microchip/xc8/v2.50/pic/sources/c99/common/awmod.c
-21 text6 CODE >4:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-22 text6 CODE >5:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-24 text6 CODE >6:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-2B text6 CODE >51:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-2F text6 CODE >52:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-31 text6 CODE >52:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-35 text6 CODE >53:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-35 text6 CODE >54:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-36 text6 CODE >54:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-3A text6 CODE >54:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-3C text6 CODE >55:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-3E text6 CODE >56:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-43 text6 CODE >59:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-47 text6 CODE >60:/opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
-FC text5 CODE >8:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-FC text5 CODE >17:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-100 text5 CODE >18:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-104 text5 CODE >19:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-108 text5 CODE >20:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-109 text5 CODE >24:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-10E text5 CODE >26:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-113 text5 CODE >28:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-11B text5 CODE >31:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-11C text5 CODE >33:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-11D text5 CODE >36:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-125 text5 CODE >39:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-128 text5 CODE >40:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-12C text5 CODE >41:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-130 text5 CODE >42:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-131 text5 CODE >45:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-136 text5 CODE >48:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-13B text5 CODE >50:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-143 text5 CODE >53:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-144 text5 CODE >54:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-145 text5 CODE >57:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-14D text5 CODE >65:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-157 text5 CODE >66:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-160 text5 CODE >119:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-168 text5 CODE >120:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-175 text5 CODE >121:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-182 text5 CODE >122:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-18A text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-192 text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-193 text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-195 text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-199 text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-19A text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-19C text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1A0 text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1A1 text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1A3 text5 CODE >123:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1A6 text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1AE text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1AF text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1B1 text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1B5 text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1B6 text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1B8 text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1BC text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1BD text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1BF text5 CODE >124:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1C2 text5 CODE >125:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1CA text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1D2 text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1D3 text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1D5 text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1D9 text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1DA text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1DC text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1E0 text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1E1 text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1E3 text5 CODE >126:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1E6 text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1EE text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1EF text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1F1 text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1F5 text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1F6 text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1F8 text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1FC text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1FD text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-1FF text5 CODE >127:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-202 text5 CODE >128:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-204 text5 CODE >128:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-20B text5 CODE >129:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-213 text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-21C text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-21D text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-21F text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-223 text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-224 text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-226 text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-22A text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-22B text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-22D text5 CODE >130:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-230 text5 CODE >131:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-238 text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-241 text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-242 text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-244 text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-248 text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-249 text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-24B text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-24F text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-250 text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-252 text5 CODE >132:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-255 text5 CODE >133:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-257 text5 CODE >133:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-25E text5 CODE >134:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-266 text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-26F text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-270 text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-272 text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-276 text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-277 text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-279 text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-27D text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-27E text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-280 text5 CODE >135:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-283 text5 CODE >136:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-28B text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-294 text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-295 text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-297 text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-29B text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-29C text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-29E text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2A2 text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2A3 text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2A5 text5 CODE >137:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2A8 text5 CODE >138:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2B0 text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2B9 text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2BA text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2BC text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2C0 text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2C1 text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2C3 text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2C7 text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2C8 text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2CA text5 CODE >139:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2CD text5 CODE >140:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2D5 text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2DC text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2E2 text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2E7 text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2E8 text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2EA text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2EE text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2EF text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2F1 text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2F5 text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2F6 text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2F8 text5 CODE >141:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-2FB text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-304 text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-30A text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-30F text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-310 text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-312 text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-316 text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-317 text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-319 text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-31D text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-31E text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-320 text5 CODE >145:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-323 text5 CODE >146:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-325 text5 CODE >146:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-32C text5 CODE >149:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-335 text5 CODE >149:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-339 text5 CODE >152:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-33A text5 CODE >153:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-33C text5 CODE >153:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-343 text5 CODE >154:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-347 text5 CODE >155:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-348 text5 CODE >157:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-34A text5 CODE >157:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-351 text5 CODE >158:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-353 text5 CODE >158:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-357 text5 CODE >152:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-35B text5 CODE >163:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-35C text5 CODE >164:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-360 text5 CODE >165:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-370 text5 CODE >165:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-374 text5 CODE >166:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-376 text5 CODE >167:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-377 text5 CODE >168:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-377 text5 CODE >169:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-37C text5 CODE >174:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-381 text5 CODE >175:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-384 text5 CODE >175:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-388 text5 CODE >175:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-38C text5 CODE >175:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-38F text5 CODE >176:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-393 text5 CODE >177:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3AC text5 CODE >178:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3AE text5 CODE >178:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3B2 text5 CODE >183:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3B7 text5 CODE >183:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3BB text5 CODE >183:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3BF text5 CODE >184:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3C7 text5 CODE >185:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3C8 text5 CODE >187:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3CD text5 CODE >187:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3D1 text5 CODE >187:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3D5 text5 CODE >188:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3DD text5 CODE >190:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3DE text5 CODE >191:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3DF text5 CODE >194:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3E1 text5 CODE >195:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3E9 text5 CODE >196:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3ED text5 CODE >197:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3EE text5 CODE >199:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3F0 text5 CODE >199:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3F3 text5 CODE >200:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3F3 text5 CODE >201:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3F5 text5 CODE >203:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-3FD text5 CODE >205:/opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcmul.c
-28A text4 CODE >43:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-28A text4 CODE >47:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-293 text4 CODE >48:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-29C text4 CODE >49:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2A5 text4 CODE >49:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2AB text4 CODE >49:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2AF text4 CODE >50:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2B0 text4 CODE >51:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2B8 text4 CODE >52:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2BA text4 CODE >53:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2BE text4 CODE >54:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2C1 text4 CODE >54:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2C6 text4 CODE >57:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2C7 text4 CODE >57:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2CD text4 CODE >57:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2D6 text4 CODE >60:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2D8 text4 CODE >60:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2DD text4 CODE >63:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2DF text4 CODE >63:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2E6 text4 CODE >64:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2E8 text4 CODE >62:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2E8 text4 CODE >65:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2ED text4 CODE >67:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2F2 text4 CODE >68:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2F7 text4 CODE >68:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2F9 text4 CODE >68:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2FB text4 CODE >68:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2FD text4 CODE >70:/opt/microchip/xc8/v2.50/pic/sources/c99/common/fltol.c
-2FE text3 CODE >7:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-2FE text3 CODE >8:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-31E text3 CODE >10:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-336 text3 CODE >11:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-34E text3 CODE >12:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-366 text3 CODE >13:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-375 text3 CODE >16:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-379 text3 CODE >17:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-37A text3 CODE >18:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-382 text3 CODE >19:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-385 text3 CODE >22:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-389 text3 CODE >23:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-391 text3 CODE >26:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-397 text3 CODE >27:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-39F text3 CODE >30:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-3A5 text3 CODE >31:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-3AD text3 CODE >32:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-A text2 CODE >5:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
-A text2 CODE >6:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
-E text2 CODE >7:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
-12 text2 CODE >8:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
-13 text1 CODE >10:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
-13 text1 CODE >11:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
-16 text1 CODE >12:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
-1A text1 CODE >13:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
-20 text1 CODE >14:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
-3AE maintext CODE >34:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-3AE maintext CODE >35:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-3B2 maintext CODE >36:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-3B4 maintext CODE >37:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-3B5 maintext CODE >40:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-3BC maintext CODE >41:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-3F0 maintext CODE >43:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
-3F9 maintext CODE >44:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/main_adc.c
+$.ca/dist/defaultActiveCA/production\ADC.X.production.o
+3FE cinit CODE >307:C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_1.s
+3FE cinit CODE >310:C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_1.s
+3FE cinit CODE >316:C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_1.s
+3FE cinit CODE >318:C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_1.s
+3FF cinit CODE >319:C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_1.s
+215 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+215 text4 CODE >43:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+217 text4 CODE >45:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+21B text4 CODE >46:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+21D text4 CODE >46:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+221 text4 CODE >47:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+222 text4 CODE >47:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+226 text4 CODE >47:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+228 text4 CODE >48:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+229 text4 CODE >48:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+22D text4 CODE >48:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+22F text4 CODE >49:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+235 text4 CODE >52:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+239 text4 CODE >53:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+272 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+272 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+274 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+27A text3 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+27C text3 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+27D text3 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+27E text3 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+282 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+284 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+286 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+28A text3 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+28B text3 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+28F text3 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+291 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+293 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+297 text3 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+29B text3 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+29E text3 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+2A1 text3 CODE >24:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+2A2 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+2A3 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+2A7 text3 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+2A9 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+2AF text3 CODE >29:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+2B3 text3 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwdiv.c
+23A text2 CODE >5:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+23A text2 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+240 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+242 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+243 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+244 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+248 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+24A text2 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+24C text2 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+250 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+252 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+256 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+25A text2 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+25D text2 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+260 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+261 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+265 text2 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+267 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+26D text2 CODE >24:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+271 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\lwmod.c
+2FE text1 CODE >25:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2FE text1 CODE >27:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2FE text1 CODE >28:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+30B text1 CODE >29:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+321 text1 CODE >30:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+337 text1 CODE >31:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+344 text1 CODE >33:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+346 text1 CODE >34:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+355 text1 CODE >35:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+36B text1 CODE >36:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+385 text1 CODE >37:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3A3 text1 CODE >40:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3B0 text1 CODE >41:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3BD text1 CODE >42:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3C9 text1 CODE >43:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3D5 text1 CODE >46:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3E1 text1 CODE >48:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3EA text1 CODE >49:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3EC text1 CODE >49:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3F5 text1 CODE >49:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3F9 text1 CODE >49:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+3FD text1 CODE >50:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2B4 maintext CODE >52:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2B4 maintext CODE >53:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2B4 maintext CODE >54:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2B6 maintext CODE >56:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2B9 maintext CODE >57:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2BA maintext CODE >58:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2BB maintext CODE >61:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2C2 maintext CODE >65:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2C6 maintext CODE >66:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2CA maintext CODE >68:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2CD maintext CODE >69:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2CE maintext CODE >70:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2D5 maintext CODE >69:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2DB maintext CODE >74:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2E1 maintext CODE >77:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
+2F7 maintext CODE >80:C:\repo\CalculadoraPic16F818\practica3/main_adc.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -583,89 +173,69 @@ E text2 CODE >7:/home/axl/Documents/GitHub/CalculadoraPic16F818/practica3/adc.c
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-___latbits 0 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___awdiv@counter 44 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__Hspace_0 810 0 ABS 0 - -
-__Hspace_1 7B 0 ABS 0 - -
+___latbits 0 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
+___lwmod@counter 51 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__Hspace_0 400 0 ABS 0 - -
+__Hspace_1 67 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
-main@voltage 2D 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
+__Hspace_4 400F 0 ABS 0 - -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack /tmp/xcXImKmKO/driver_tmp_12.o
-_main 75C 0 CODE 0 maintext .ca/dist/defaultActiveCA/production/ADC.X.production.o
-btemp 7E 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___stack_hi 0 0 STACK 2 stack /tmp/xcXImKmKO/driver_tmp_12.o
-___stack_lo 0 0 STACK 2 stack /tmp/xcXImKmKO/driver_tmp_12.o
-start 0 0 CODE 0 init /tmp/xcXImKmKO/driver_tmp_12.o
-___flmul@aexp 60 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___flmul@bexp 61 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___flmul@prod 62 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___flmul@sign 5B 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___flmul@temp 66 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+_main 568 0 CODE 0 maintext .ca/dist/defaultActiveCA/production\ADC.X.production.o
+btemp 7E 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+?___wmul 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-___awmod@sign 4D 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-intlevel0 0 0 ENTRY 0 functab /tmp/xcXImKmKO/driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab /tmp/xcXImKmKO/driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab /tmp/xcXImKmKO/driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab /tmp/xcXImKmKO/driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab /tmp/xcXImKmKO/driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab /tmp/xcXImKmKO/driver_tmp_12.o
-wtemp0 7E 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+wtemp0 7E 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-___awdiv@sign 45 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-_ADCON0 1F 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_ADCON1 9F 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_ADRESH 1E 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_ADRESL 9E 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__end_of__Umul8_16 90 0 CODE 0 text6 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___awdiv@dividend 42 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
+___wmul@multiplicand 42 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+_ADCON0 1F 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
+_ADCON1 9F 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
+_ADRESH 1E 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
+_ADRESL 9E 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__end_of___wmul 474 0 CODE 0 text4 .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___fldiv@aexp 2C 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___fldiv@bexp 2B 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___fldiv@sign 24 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___awdiv@divisor 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__end_of___awdiv 466 0 CODE 0 text8 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__end_of___awmod 514 0 CODE 0 text7 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__Umul8_16 42 0 CODE 0 text6 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__end_of___fldiv 3A0 0 CODE 0 text10 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__end_of___flmul 7FC 0 CODE 0 text5 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__end_of___fltol 5FC 0 CODE 0 text4 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__Umul8_16@multiplicand 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___stackhi 0 0 ABS 0 - /tmp/xcXImKmKO/driver_tmp_12.o
-___stacklo 0 0 ABS 0 - /tmp/xcXImKmKO/driver_tmp_12.o
-___fldiv@a 68 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___fldiv@b 6C 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___flmul@a 52 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___flmul@b 4E 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-start_initialization 7FC 0 CODE 0 cinit .ca/dist/defaultActiveCA/production/ADC.X.production.o
-actualizarPantalla@d1 20 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-actualizarPantalla@d2 22 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-actualizarPantalla@d3 24 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-actualizarPantalla@d4 26 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__pcstackBANK0 20 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___int_sp 0 0 STACK 2 stack /tmp/xcXImKmKO/driver_tmp_12.o
+___lwmod@divisor 4D 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__end_of___lwdiv 568 0 CODE 0 text3 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__end_of___lwmod 4E4 0 CODE 0 text2 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+___lwdiv@quotient 4A 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+___lwmod@dividend 4F 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+start_initialization 7FC 0 CODE 0 cinit .ca/dist/defaultActiveCA/production\ADC.X.production.o
+_TRISAbits 85 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
+main@voltage_mv 65 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 BANK2 1 bank2 -
 __Hbank3 0 0 BANK3 1 bank3 -
 __Hcinit 800 0 CODE 0 cinit -
 __Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 4C 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Hmaintext 0 0 ABS 0 maintext -
-___xxtofl@arg 4A 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___xxtofl@exp 49 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___xxtofl@val 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
 __Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 BANK2 1 bank2 -
 __Lbank3 0 0 BANK3 1 bank3 -
 __Lcinit 7FC 0 CODE 0 cinit -
 __Lstack 0 0 STACK 2 stack -
-___flmul@grs 5C 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_PORTAbits 5 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
+_PORTAbits 5 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
+_PORTBbits 6 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hheap 0 0 HEAP 7 heap -
@@ -686,95 +256,63 @@ __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Lsivt 0 0 CODE 0 sivt -
 __Ltext 0 0 ABS 0 text -
-__LcstackBANK0 810 0 ABS 0 cstackBANK0 -
-__HcstackCOMMON 810 0 ABS 0 cstackCOMMON -
+___wmul 42A 0 CODE 0 text4 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __S0 400 0 ABS 0 - -
-__S1 7B 0 ABS 0 - -
+__S1 67 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-___xxtofl 90 0 CODE 0 text9 .ca/dist/defaultActiveCA/production/ADC.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec /tmp/xcXImKmKO/driver_tmp_12.o
-__end_of___xxtofl 1F8 0 CODE 0 text9 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___awmod@counter 4C 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-actualizarPantalla@voltage 72 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext10 0 0 CODE 0 text10 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___awdiv 3A0 0 CODE 0 text8 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___awmod 466 0 CODE 0 text7 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___fldiv 0 0 CODE 0 text10 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___flmul 1F8 0 CODE 0 text5 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___fltol 514 0 CODE 0 text4 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__pmaintext 75C 0 CODE 0 maintext .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__Umul8_16@multiplier 48 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+___lwdiv 4E4 0 CODE 0 text3 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+___lwmod 474 0 CODE 0 text2 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__pmaintext 568 0 CODE 0 maintext .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Lcommon 0 0 ABS 0 common -
-___fldiv@grs 27 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___fldiv@rem 20 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___fldiv@new_exp 25 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-actualizarPantalla@display_value 28 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_ADCON0bits 1F 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_adc_init 14 0 CODE 0 text2 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_adc_read 26 0 CODE 0 text1 .ca/dist/defaultActiveCA/production/ADC.X.production.o
+__Lconfig 0 0 CONFIG 4 config -
+___wmul@multiplier 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+___lwdiv@divisor 46 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+actualizarPantalla@display_value 52 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+actualizarPantalla@i 60 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
-__HcstackBANK0 810 0 ABS 0 cstackBANK0 -
-__Umul8_16@product 44 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
+__Lspace_4 0 0 ABS 0 - -
 __Lend_init 0 0 CODE 0 end_init -
-__end_of_adc_init 26 0 CODE 0 text2 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__end_of_adc_read 42 0 CODE 0 text1 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__LcstackCOMMON 810 0 ABS 0 cstackCOMMON -
-___fltol@exp1 71 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-end_of_initialization 7FC 0 CODE 0 cinit .ca/dist/defaultActiveCA/production/ADC.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 7FC 0 CODE 0 cinit .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Hintentry 0 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
-___awdiv@quotient 46 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-?___awdiv 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-?___awmod 48 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-?___fldiv 68 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-?___flmul 4E 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-?___fltol 68 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
+___lwdiv@dividend 48 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+?___lwdiv 46 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+?___lwmod 4D 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec -
-___awmod@dividend 4A 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext1 26 0 CODE 0 text1 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext2 14 0 CODE 0 text2 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext3 5FC 0 CODE 0 text3 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext4 514 0 CODE 0 text4 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext5 1F8 0 CODE 0 text5 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext6 42 0 CODE 0 text6 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext7 466 0 CODE 0 text7 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext8 3A0 0 CODE 0 text8 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__ptext9 90 0 CODE 0 text9 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-?__Umul8_16 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
+__ptext1 5FC 0 CODE 0 text1 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__ptext2 474 0 CODE 0 text2 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__ptext3 4E4 0 CODE 0 text3 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__ptext4 42A 0 CODE 0 text4 .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
-?___xxtofl 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
-__Umul8_16@word_mpld 46 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___fltol@sign1 70 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
-___heap_hi 0 0 ABS 0 - /tmp/xcXImKmKO/driver_tmp_12.o
-___heap_lo 0 0 ABS 0 - /tmp/xcXImKmKO/driver_tmp_12.o
-___fltol@f1 68 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-main@adc_value 31 0 BANK0 1 cstackBANK0 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__end_of__initialization 7FC 0 CODE 0 cinit .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___awmod@divisor 48 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+main@adc_value 63 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__end_of__initialization 7FC 0 CODE 0 cinit .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
-__pcstackCOMMON 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__Hend_init 4 0 CODE 0 end_init -
-__end_of_main 810 0 CODE 0 maintext .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__end_of_actualizarPantalla 75C 0 CODE 0 text3 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_PORTB 6 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_TRISA 85 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_TRISB 86 0 ABS 0 - .ca/dist/defaultActiveCA/production/ADC.X.production.o
+__pcstackCOMMON 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+actualizarPantalla@digits 58 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__Hend_init 2 0 CODE 0 end_init -
+__end_of_main 5FC 0 CODE 0 maintext .ca/dist/defaultActiveCA/production\ADC.X.production.o
+__end_of_actualizarPantalla 7FC 0 CODE 0 text1 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+_TRISB 86 0 ABS 0 - .ca/dist/defaultActiveCA/production\ADC.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-?_adc_read 40 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-__initialization 7FC 0 CODE 0 cinit .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___xxtofl@sign 48 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production/ADC.X.production.o
-_actualizarPantalla 5FC 0 CODE 0 text3 .ca/dist/defaultActiveCA/production/ADC.X.production.o
-___int_stack_hi 0 0 STACK 2 stack /tmp/xcXImKmKO/driver_tmp_12.o
-___int_stack_lo 0 0 STACK 2 stack /tmp/xcXImKmKO/driver_tmp_12.o
+__initialization 7FC 0 CODE 0 cinit .ca/dist/defaultActiveCA/production\ADC.X.production.o
+___wmul@product 44 0 COMMON 1 cstackCOMMON .ca/dist/defaultActiveCA/production\ADC.X.production.o
+_actualizarPantalla 5FC 0 CODE 0 text1 .ca/dist/defaultActiveCA/production\ADC.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\Axela\AppData\Local\Temp\xcAsdgk.\driver_tmp_12.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -801,14 +339,13 @@ ___int_stack_lo 0 0 STACK 2 stack /tmp/xcXImKmKO/driver_tmp_12.o
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 3FE 7FC 2 2
-text1 0 13 26 E 2
-text2 0 A 14 9 2
-text5 0 FC 1F8 302 2
-text6 0 21 42 27 2
-text9 0 48 90 B4 2
-cstackCOMMON 1 40 40 3B 1
-cstackBANK0 1 20 20 13 1
-reset_vec 0 0 0 2 2
+text1 0 2FE 5FC 100 2
+text2 0 23A 474 38 2
+text3 0 272 4E4 42 2
+text4 0 215 42A 25 2
+maintext 0 2B4 568 4A 2
+cstackCOMMON 1 40 40 27 1
+reset_vec 0 0 0 1 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

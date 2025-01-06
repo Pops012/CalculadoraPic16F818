@@ -17,8 +17,6 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>../adc.c</itemPath>
-      <itemPath>../adc.h</itemPath>
       <itemPath>../main_adc.c</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -33,10 +31,10 @@
         <targetDevice>PIC16F818</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>Simulator</platformTool>
         <languageToolchain>XC8</languageToolchain>
         <languageToolchainVersion>2.50</languageToolchainVersion>
-        <platform>2</platform>
+        <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="PIC16Fxxx_DFP" vendor="Microchip" version="1.6.156"/>

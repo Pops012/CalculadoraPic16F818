@@ -1,0 +1,5 @@
+{
+    "mplab.mplabx-importer.ignorePatterns": [
+        "ADC.X/nbproject/configurations.xml"
+    ]
+}
